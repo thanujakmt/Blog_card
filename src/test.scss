@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// font-family: 'Figtree', sans-serif;
+
+$Yellow: hsl(47, 88%, 63%);
+$White: hsl(0, 0%, 100%);
+$Grey: hsl(0, 0%, 50%);
+$Black: hsl(0, 0%, 7%);
+
+.main{
+    height: 100vh;
+    background-color: $Yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sub_main{
+        height: 550px;
+        width: 430px;
+        background-color: $White;
+        border-radius: 20px;
+        border: 1px solid $Black;
+        border-right: 10px solid $Black;
+        border-bottom: 10px solid $Black;
+        .content{
+            // border: 1px solid $Black;
+            height: 90%;
+            // width: 100%;
+            margin: 10px;
+            .image_box{
+                // border: 1px solid $Black;
+                height: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // padding: 0px;
+                img{
+                    height: 220px;
+                    border-radius: 15px;
+                    // border: 2px solid red;
+                    object-fit: cover;
+                    // width: 600px;
+                }
+            }
+            .text_content{
+                a{
+                    border-radius: 5px;
+                    text-decoration: none;
+                    color: $Black;
+                    background-color: $Yellow;
+                    padding: 5px 10px;
+                    font-weight: 700;
+                    font-family: 'Figtree', sans-serif;
+                }
+                padding: 5px;
+                // border: 1px solid $Black;
+                height: 50%
+            }
+            p{
+                margin-top: 10px;
+                font-weight: 500;
+                font-size: 0.9em;
+            }
+            h5{
+                font-weight: 700;
+                font-size: 1.5em;
+            }
+            .para{
+                color: $Grey;
+                font-size: 1em;
+                font-weight: 400;
+            }
+            span{
+                img{
+                    height: 15%;
+                    // width: 15%;
+                }
+            }
+            span{
+                font-size: 0.9em;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .main{
+        .sub_main{
+            // height: 550px;
+            width: 360px;
+        }
+    }
+}
